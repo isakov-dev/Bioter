@@ -15,6 +15,7 @@ let path = {
     watch: {
         css: 'src/scss/**/*.scss',
         html: 'src/html/**/*.html',
+        data: 'data/**/*.json',
     }
 };
 
@@ -34,6 +35,7 @@ function html() {
 function watch() {
     gulp.watch(path.watch.css, styles)
     gulp.watch(path.watch.html, html)
+    gulp.watch(path.watch.data, html)
 }
 
 exports.default = gulp.parallel(html, styles, watch);

@@ -1,0 +1,34 @@
+.small-header {
+
+  background: $blue;
+
+  @include tablet {
+    display: none;
+  }
+
+  &__row {
+
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    @include laptop {
+      justify-content: space-between;
+    }
+
+  }
+
+  &__text {
+
+    font-size: 13px;
+    line-height: 22px;
+    color: $white;
+
+    &_translucent {
+      opacity: 0.65;
+    }
+
+  }
+
+}

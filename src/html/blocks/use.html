@@ -1,0 +1,33 @@
+<div class="use">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="title">Применение в пищевых производствах</div>
+            </div>
+        </div>
+        <div class="use__content row">
+            <div class="use__category col-lg-6">
+                <div class="subtitle">Глюкозно-фруктозные сиропы</div>
+                <div class="use__description">
+                    Используются как для полной, так и для частичной замены патоки, сахара, инверта,
+                    искусственного меда.<br>
+                    Это более доступная и естественная замена привычным консервантам.
+                </div>
+                <div class="use__list">
+                    @@loop("parts/use-item.html", "../../data/use/fructose-syrups.json")
+                </div>
+            </div>
+            <div class="use__category col-lg-6">
+                <div class="subtitle">Силикагелевые стабилизаторы</div>
+                <div class="use__description">
+                    Для предотвращения коллоидного помутнения пива (вина) на этапе фильтрации применяют порошковый
+                    селикогель, который изберательно адсорбирует белковые соединения, что приводит к устранению
+                    причины помутнения пива.
+                </div>
+                <div class="use__list">
+                    @@loop("parts/use-item.html", "../../data/use/silicagel-stabilizers.json")
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
