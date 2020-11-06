@@ -40,6 +40,7 @@ h6 {
   font-size: 36px;
   line-height: 42px;
   color: $blue;
+  z-index: 1;
 
   @include laptop {
     font-size: 26px;
@@ -91,4 +92,20 @@ h6 {
     line-height: 23px;
   }
 
+}
+
+.fade:not(.show) {
+  opacity: 0;
+}
+
+.fade {
+  transition: opacity .15s linear;
+}
+
+.tab-content>.tab-pane {
+  display: none;
+}
+
+.tab-content>.active {
+  display: block;
 }
