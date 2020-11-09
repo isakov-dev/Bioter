@@ -235,6 +235,7 @@ h6 {
 }
 
 .category__tab {
+  white-space: nowrap;
   margin-right: 15px;
   display: flex;
   align-items: center;
@@ -275,7 +276,7 @@ h6 {
   font-size: 15px;
   line-height: 22px;
   color: #1C3873;
-  opacity: .6;
+  opacity: .7;
   padding-right: 20px;
   margin-top: 16px;
 }
@@ -338,6 +339,68 @@ h6 {
   .use__caption {
     padding-right: 0;
   }
+
+  .categories {
+    padding-top: 200px;
+    margin-top: -70px;
+  }
+
+  .categories::before {
+    width: 240px;
+    height: 218px;
+    top: -60px;
+  }
+
+  .category__subtitle {
+    margin-top: 40px;
+  }
+
+  .category__description {
+    margin-top: 25px;
+    font-size: 15px;
+    line-height: 22px;
+    padding-right: 0;
+  }
+
+  .category__description {
+    margin-top: 20px;
+    font-size: 15px;
+    line-height: 22px;
+  }
+
+  .category__links {
+    margin-top: 30px;
+  }
+
+  .category__link:not(:last-child) {
+    margin-bottom: 25px;
+  }
+
+  .category__advantages {
+    margin-top: 65px;
+  }
+
+  .category__tabs {
+    margin-top: 25px;
+  }
+
+  .category__tabs-content {
+    margin-top: 36px;
+  }
+
+  .advantage {
+    margin-bottom: 30px;
+  }
+
+  .advantage__image {
+    width: 130px;
+    margin-right: 25px;
+  }
+
+  .advantage__caption {
+    padding-right: 0;
+    margin-top: 0;
+  }
 }
 
 @media screen and (max-width: 767.98px) {
@@ -379,6 +442,48 @@ h6 {
     max-width: 52px;
     max-height: 52px;
   }
+
+  .categories {
+    background: url("../images/categories/bg-mobile.svg");
+    background-size: 100% 100%;
+    margin-top: 43px;
+    padding: 34px 0 73px;
+  }
+
+  .categories::before {
+    display: none;
+  }
+
+  .category__subtitle {
+    margin-top: 35px;
+  }
+
+  .category__image {
+    width: 320px;
+    position: relative;
+    left: -40px;
+    margin-bottom: 40px;
+  }
+
+  .category__tabs {
+    margin-top: 20px;
+    overflow-x: auto;
+  }
+
+  .category__tab {
+    height: 46px;
+    padding: 0 20px;
+  }
+
+  .category__tabs-content {
+    margin-top: 30px;
+  }
+
+  .advantage__image {
+    width: 105px;
+    border-radius: 17px;
+    margin-right: 20px;
+  }
 }
 
 @media screen and (max-width: 575.98px) {
@@ -388,5 +493,14 @@ h6 {
 
   .use__icon {
     margin-right: 0;
+  }
+
+  .advantage {
+    flex-direction: column;
+  }
+
+  .advantage__image {
+    margin-right: 0;
+    margin-bottom: 15px;
   }
 }

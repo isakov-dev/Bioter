@@ -6,7 +6,20 @@
   background-size: 100% 100%;
   margin-top: -130px;
 
+  @include laptop {
+    padding-top: 200px;
+    margin-top: -70px;
+  }
+
+  @include tablet {
+    background: url("../images/categories/bg-mobile.svg");
+    background-size: 100% 100%;
+    margin-top: 43px;
+    padding: 34px 0 73px;
+  }
+
   &::before {
+
     content: "";
     position: absolute;
     top: -140px;
@@ -15,6 +28,17 @@
     height: 342px;
     background: url("../images/categories/decor.png") center;
     background-size: contain;
+
+    @include laptop {
+      width: 240px;
+      height: 218px;
+      top: -60px;
+    }
+
+    @include tablet {
+      display: none;
+    }
+
   }
 
   &__item {
@@ -30,24 +54,64 @@
 .category {
 
   &__subtitle {
+
     margin-top: 50px;
+
+    @include laptop {
+      margin-top: 40px;
+    }
+
+    @include tablet {
+      margin-top: 35px;
+    }
+
   }
 
   &__description {
+
     margin-top: 30px;
     font-size: 16px;
     line-height: 24px;
     color: $blue;
     padding-right: 20px;
+
+    @include laptop {
+      margin-top: 25px;
+      font-size: 15px;
+      line-height: 22px;
+      padding-right: 0;
+    }
+
+    @include laptop {
+      margin-top: 20px;
+      font-size: 15px;
+      line-height: 22px;
+    }
+
   }
 
   &__image {
+
     max-width: 100%;
     height: auto;
+
+    @include tablet {
+      width: 320px;
+      position: relative;
+      left: -40px;
+      margin-bottom: 40px;
+    }
+
   }
 
   &__links {
+
     margin-top: 37px;
+
+    @include laptop {
+      margin-top: 30px;
+    }
+
   }
 
   &__link {
@@ -66,7 +130,13 @@
     }
 
     &:not(:last-child) {
+
       margin-bottom: 30px;
+
+      @include laptop {
+        margin-bottom: 25px;
+      }
+
     }
 
     &::before {
@@ -81,17 +151,35 @@
   }
 
   &__advantages {
+
     margin-top: 10px;
+
+    @include laptop {
+      margin-top: 65px;
+    }
+
   }
 
   &__tabs {
+
     margin-top: 30px;
     display: flex;
     align-items: center;
+
+    @include laptop {
+      margin-top: 25px;
+    }
+
+    @include tablet {
+      margin-top: 20px;
+      overflow-x: auto;
+    }
+
   }
 
   &__tab {
 
+    white-space: nowrap;
     margin-right: 15px;
     display: flex;
     align-items: center;
@@ -103,6 +191,11 @@
     border: 1px solid $blue;
     border-radius: 30px;
 
+    @include tablet {
+      height: 46px;
+      padding: 0 20px;
+    }
+
     &.active, &:hover {
       color: $white;
       background: $blue;
@@ -111,7 +204,17 @@
   }
 
   &__tabs-content {
+
     margin-top: 66px;
+
+    @include laptop {
+      margin-top: 36px;
+    }
+
+    @include tablet {
+      margin-top: 30px;
+    }
+
   }
 
 }
@@ -122,21 +225,54 @@
   align-items: start;
   margin-bottom: 35px;
 
+  @include laptop {
+    margin-bottom: 30px;
+  }
+
+  @include phone {
+    flex-direction: column;
+  }
+
   &__image {
+
     width: 150px;
     height: auto;
     flex-shrink: 0;
     margin-right: 30px;
     border-radius: 30px;
+
+    @include laptop {
+      width: 130px;
+      margin-right: 25px;
+    }
+
+    @include tablet {
+      width: 105px;
+      border-radius: 17px;
+      margin-right: 20px;
+    }
+
+    @include phone {
+      margin-right: 0;
+      margin-bottom: 15px;
+    }
+
   }
 
   &__caption {
+
     font-size: 15px;
     line-height: 22px;
     color: $blue;
-    opacity: .6;
+    opacity: .7;
     padding-right: 20px;
     margin-top: 16px;
+
+    @include laptop {
+      padding-right: 0;
+      margin-top: 0;
+    }
+
   }
 
 }
