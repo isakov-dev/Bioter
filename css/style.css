@@ -79,6 +79,43 @@ h6 {
   display: block;
 }
 
+.flickity-enabled {
+  padding-top: 70px;
+}
+
+.flickity-enabled .flickity-prev-next-button {
+  position: absolute;
+  top: 0;
+  width: 45px;
+  height: 45px;
+  border: 2px solid #B5DA22;
+  transform: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+}
+
+.flickity-enabled .flickity-prev-next-button.previous {
+  left: 0;
+}
+
+.flickity-enabled .flickity-prev-next-button.next {
+  left: 55px;
+  right: unset;
+}
+
+.flickity-enabled .flickity-prev-next-button .flickity-button-icon {
+  color: #B5DA22;
+  position: static;
+  width: unset;
+  height: 17px;
+}
+
+.flickity-enabled .flickity-prev-next-button .flickity-button-icon .arrow {
+  width: 9px;
+}
+
 .small-header {
   background: #1C3873;
 }
@@ -339,6 +376,71 @@ h6 {
   line-height: 22px;
   opacity: 0.6;
   padding-right: 20px;
+}
+
+.logistics {
+  margin-top: 117px;
+}
+
+.logistics__benefits {
+  margin-top: 74px;
+}
+
+.logistics__benefit {
+  display: flex;
+  align-items: start;
+}
+
+.logistics__benefit-icon {
+  width: 90px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #FFFFFF;
+  box-shadow: 0 19px 39px rgba(170, 202, 220, 0.3);
+  border-radius: 15px;
+  margin-right: 22px;
+}
+
+.logistics__benefit-text {
+  font-size: 15px;
+  line-height: 22px;
+  margin-top: 19px;
+  opacity: .8;
+  color: #1C3873;
+  padding-right: 20px;
+}
+
+.logistics__slider {
+  margin-top: 70px;
+}
+
+.logistics__equipment {
+  position: relative;
+  height: 324px;
+  width: calc(33.333% - 32px);
+  background-size: cover;
+  border-radius: 30px;
+  overflow: hidden;
+  margin-right: 48px;
+}
+
+.logistics__equipment-name {
+  background: rgba(188, 215, 255, 0.78);
+  height: 74px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 0 15px;
+  color: #1C3873;
+  font-size: 18px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 
 @media screen and (max-width: 1199.98px) {

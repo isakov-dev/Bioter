@@ -1,0 +1,70 @@
+.logistics {
+
+  margin-top: 117px;
+
+  &__benefits {
+    margin-top: 74px;
+  }
+
+  &__benefit {
+
+    display: flex;
+    align-items: start;
+
+    &-icon {
+      width: 90px;
+      height: 80px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: $white;
+      box-shadow: 0 19px 39px rgba(170, 202, 220, 0.3);
+      border-radius: 15px;
+      margin-right: 22px;
+    }
+
+    &-text {
+      font-size: 15px;
+      line-height: 22px;
+      margin-top: 19px;
+      opacity: .8;
+      color: $blue;
+      padding-right: 20px;
+    }
+
+  }
+
+  &__slider {
+    margin-top: 70px;
+  }
+
+  &__equipment {
+
+    position: relative;
+    height: 324px;
+    width: calc(33.333% - 32px);
+    background-size: cover;
+    border-radius: 30px;
+    overflow: hidden;
+    margin-right: 48px;
+
+    &-name {
+      background: rgba(188,215,255,.78);
+      height: 74px;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      padding: 0 15px;
+      color: $blue;
+      font-size: 18px;
+      font-weight: bold;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+
+  }
+
+}

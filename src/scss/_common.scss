@@ -109,3 +109,46 @@ h6 {
 .tab-content>.active {
   display: block;
 }
+
+.flickity-enabled {
+
+  padding-top: 70px;
+
+  .flickity-prev-next-button {
+
+    position: absolute;
+    top: 0;
+    width: 45px;
+    height: 45px;
+    border: 2px solid $green;
+    transform: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+
+    &.previous {
+      left: 0;
+    }
+
+    &.next {
+      left: 55px;
+      right: unset;
+    }
+
+    .flickity-button-icon {
+
+      color: $green;
+      position: static;
+      width: unset;
+      height: 17px;
+
+      .arrow {
+        width: 9px;
+      }
+
+    }
+
+  }
+
+}
