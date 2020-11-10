@@ -41,7 +41,12 @@
     align-items: start;
     margin-bottom: 30px;
 
+    @include phone {
+      flex-direction: column;
+    }
+
     &-icon {
+
       width: 90px;
       height: 80px;
       flex-shrink: 0;
@@ -52,6 +57,11 @@
       box-shadow: 0 19px 39px rgba(170, 202, 220, 0.3);
       border-radius: 15px;
       margin-right: 22px;
+
+      @include phone {
+        margin-right: 0;
+      }
+
     }
 
     &-text {

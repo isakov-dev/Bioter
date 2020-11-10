@@ -1,0 +1,34 @@
+.questions {
+
+  height: 564px;
+  margin-top: -174px;
+  background: url("../images/questions/bg.png") top center;
+  background-size: cover;
+
+  &__headers {
+    margin-top: 217px;
+    color: $white;
+    padding-right: 20px;
+  }
+
+  &__subtitle {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  &__title {
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 35px;
+    margin-top: 30px;
+  }
+
+  &__form {
+    margin-top: 124px;
+    max-width: 360px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+}

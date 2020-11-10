@@ -1,0 +1,100 @@
+.form {
+
+  background: $light-blue;
+  border-radius: 10px;
+  padding: 35px 40px 60px;
+
+  &_embed {
+    background: transparent;
+    padding: 0;
+    border-radius: 0;
+  }
+
+  &__title {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    color: $blue;
+  }
+
+  &__fields {
+    margin-top: 35px;
+  }
+
+  &__field-wrapper {
+
+    position: relative;
+
+    &::before {
+      content: '';
+      position: absolute;
+      left: 14px;
+      top: 50%;
+      transform: translateY(-50%);
+      height: 17px;
+      width: 17px;
+      background-size: contain;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+
+    &_name {
+
+      &::before {
+        background-image: url("../images/form/person.svg");
+      }
+
+    }
+
+    &_phone {
+
+      &::before {
+        background-image: url("../images/form/phone.svg");
+      }
+
+    }
+
+    &_company {
+
+      &::before {
+        background-image: url("../images/form/company.svg");
+      }
+
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 10px;
+    }
+
+  }
+
+  &__field {
+
+    height: 40px;
+    width: 100%;
+    border-radius: 20px;
+    background: $white;
+    font-size: 14px;
+    line-height: 18px;
+    color: $blue;
+    border: 1px solid #9ba8b9;
+    padding: 0 20px 0 48px;
+
+    &:focus, &:active {
+      outline: none;
+    }
+
+    &::placeholder {
+      color: #9ba8b9;
+    }
+
+  }
+
+  &__submit {
+    margin-top: 25px;
+    width: 100%;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.26);
+  }
+
+}

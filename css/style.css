@@ -16,6 +16,13 @@ body {
   text-align: left;
 }
 
+.site-container {
+  max-width: 1920px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 a,
 a:hover {
   text-decoration: unset;
@@ -63,6 +70,46 @@ h6 {
   color: #1C3873;
 }
 
+.button {
+  background: #B5DA22;
+  color: #1C3873;
+  height: 45px;
+  border-radius: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: max-content;
+  padding: 0 35px;
+  font-size: 15px;
+  line-height: 18px;
+  border: none;
+}
+
+.button:focus,
+.button:active {
+  outline: none;
+}
+
+.button:hover {
+  background: #74CC1C;
+  cursor: pointer;
+}
+
+.button:active {
+  transform: scale(0.95);
+}
+
+.button_disabled {
+  opacity: .3;
+  cursor: not-allowed !important;
+  background: #B5DA22 !important;
+}
+
+.button_disabled:active {
+  transform: none;
+}
+
 .fade:not(.show) {
   opacity: 0;
 }
@@ -77,6 +124,15 @@ h6 {
 
 .tab-content > .active {
   display: block;
+}
+
+.fancybox-close-small {
+  padding: 0 !important;
+  width: 30px;
+  height: 30px;
+  margin-top: 12px;
+  margin-right: 12px;
+  color: #1C3873 !important;
 }
 
 .flickity-enabled {
@@ -449,6 +505,154 @@ h6 {
   text-align: center;
 }
 
+.questions {
+  height: 564px;
+  margin-top: -174px;
+  background: url("../images/questions/bg.png") top center;
+  background-size: cover;
+}
+
+.questions__headers {
+  margin-top: 217px;
+  color: #FFFFFF;
+  padding-right: 20px;
+}
+
+.questions__subtitle {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.questions__title {
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 35px;
+  margin-top: 30px;
+}
+
+.questions__form {
+  margin-top: 124px;
+  max-width: 360px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.form {
+  background: #bcd7ff;
+  border-radius: 10px;
+  padding: 35px 40px 60px;
+}
+
+.form_embed {
+  background: transparent;
+  padding: 0;
+  border-radius: 0;
+}
+
+.form__title {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  color: #1C3873;
+}
+
+.form__fields {
+  margin-top: 35px;
+}
+
+.form__field-wrapper {
+  position: relative;
+}
+
+.form__field-wrapper::before {
+  content: '';
+  position: absolute;
+  left: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 17px;
+  width: 17px;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.form__field-wrapper_name::before {
+  background-image: url("../images/form/person.svg");
+}
+
+.form__field-wrapper_phone::before {
+  background-image: url("../images/form/phone.svg");
+}
+
+.form__field-wrapper_company::before {
+  background-image: url("../images/form/company.svg");
+}
+
+.form__field-wrapper:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.form__field {
+  height: 40px;
+  width: 100%;
+  border-radius: 20px;
+  background: #FFFFFF;
+  font-size: 14px;
+  line-height: 18px;
+  color: #1C3873;
+  border: 1px solid #9ba8b9;
+  padding: 0 20px 0 48px;
+}
+
+.form__field:focus,
+.form__field:active {
+  outline: none;
+}
+
+.form__field::placeholder {
+  color: #9ba8b9;
+}
+
+.form__submit {
+  margin-top: 25px;
+  width: 100%;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.26);
+}
+
+.modal {
+  display: none;
+  width: 360px;
+  border-radius: 10px;
+  background: #bcd7ff;
+  padding: 55px 40px 42px;
+}
+
+.modal__icon {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 40px;
+}
+
+.modal__title {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  color: #1C3873;
+}
+
+.modal__subtitle {
+  margin-top: 27px;
+  font-size: 18px;
+  line-height: 24px;
+  text-align: center;
+  color: #1C3873;
+}
+
 @media screen and (max-width: 1199.98px) {
   .about::before {
     height: 110px;
@@ -760,13 +964,11 @@ h6 {
   }
 
   .about__benefit {
-    flex-direction: column;
     margin-bottom: 35px;
   }
 
   .about__benefit-icon {
     width: 60px;
-    margin-right: 0;
   }
 
   .logistics {
@@ -811,6 +1013,22 @@ h6 {
 
   .about::before {
     height: 60px;
+  }
+
+  .about__benefit {
+    flex-direction: column;
+  }
+
+  .about__benefit-icon {
+    margin-right: 0;
+  }
+
+  .logistics__benefit {
+    flex-direction: column;
+  }
+
+  .logistics__benefit-icon {
+    margin-right: 0;
   }
 
   .logistics__equipment {

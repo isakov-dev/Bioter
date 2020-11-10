@@ -1,7 +1,8 @@
 let gulp = require('gulp'),
     sass = require('gulp-sass'),
     gcmq = require('gulp-group-css-media-queries'),
-    fileinclude = require('gulp-file-include');
+    fileinclude = require('gulp-file-include'),
+    htmlbeautify = require('gulp-html-beautify');
 
 let path = {
     build: {
@@ -29,6 +30,7 @@ function styles() {
 function html() {
     return gulp.src(path.src.html)
         .pipe(fileinclude())
+        .pipe(htmlbeautify({indentSize: 4}))
         .pipe(gulp.dest(path.build.html));
 }
 

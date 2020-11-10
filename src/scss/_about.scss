@@ -114,8 +114,11 @@
     margin-bottom: 40px;
 
     @include tablet {
-      flex-direction: column;
       margin-bottom: 35px;
+    }
+
+    @include phone {
+      flex-direction: column;
     }
 
     &-icon {
@@ -126,6 +129,9 @@
 
       @include tablet {
         width: 60px;
+      }
+
+      @include phone {
         margin-right: 0;
       }
 

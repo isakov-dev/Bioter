@@ -1,0 +1,30 @@
+<div class="modal" id="modal-success">
+    <img src="images/modal/icon-ok.svg" class="modal__icon" alt="">
+    <div class="modal__title">Спасибо,<br>ваша заявка принята.</div>
+    <div class="modal__subtitle">В ближайшее время мы свяжется с вами.</div>
+</div>
+
+<div class="modal" id="modal-error">
+    <img src="images/modal/icon-ok.svg" class="modal__icon" alt="">
+    <div class="modal__title">Ой-ой,<br>какая досада!</div>
+    <div class="modal__subtitle">Форма не отправлена, потому что разработчик еще не написал бэкэнд</div>
+</div>
+
+<div class="modal" id="modal-form">
+    <div class="form form_embed">
+        <div class="form__title">
+            Заполните форму и наш технолог проконсультирует по любым вопросам
+        </div>
+        <div class="form__fields">
+            <div class="form__field-wrapper form__field-wrapper_name">
+                <input type="text" class="form__field" placeholder="Имя" v-model="name">
+            </div>
+            <div class="form__field-wrapper form__field-wrapper_phone">
+                <input class="form__field" placeholder="Телефон">
+            </div>
+        </div>
+        <button class="button form__submit">
+            Отправить заявку
+        </button>
+    </div>
+</div>
