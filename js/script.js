@@ -49,8 +49,8 @@ $(document).ready(function () {
                     this.sending = true;
                     let self = this;
                     let formData = {
-                        title: this.title,
                         name: this.name,
+                        phone: this.phone,
                         company: this.company
                     };
 

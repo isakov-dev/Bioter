@@ -1,0 +1,11 @@
+<Files errors.log>
+    Deny from all
+</Files>
+
+<Files Logic.php>
+    Deny from all
+</Files>
+
+<Files .htaccess>
+    Deny from all
+</Files>
