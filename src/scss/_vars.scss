@@ -4,6 +4,12 @@ $green: #B5DA22;
 $light-blue: #bcd7ff;
 $white: #FFFFFF;
 
+@mixin desktop-xl {
+  @media screen and (max-width: 1399.98px) {
+    @content;
+  }
+}
+
 @mixin desktop {
   @media screen and (max-width: 1199.98px) {
     @content;

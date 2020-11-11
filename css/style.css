@@ -506,16 +506,17 @@ h6 {
 }
 
 .questions {
-  height: 564px;
+  height: 588px;
   margin-top: -174px;
   background: url("../images/questions/bg.png") top center;
-  background-size: cover;
+  background-size: auto 100%;
 }
 
 .questions__headers {
-  margin-top: 217px;
+  margin-top: 240px;
   color: #FFFFFF;
   padding-right: 20px;
+  padding-left: 80px;
 }
 
 .questions__subtitle {
@@ -532,7 +533,7 @@ h6 {
 }
 
 .questions__form {
-  margin-top: 124px;
+  margin-top: 147px;
   max-width: 360px;
   margin-left: auto;
   margin-right: auto;
@@ -651,6 +652,12 @@ h6 {
   line-height: 24px;
   text-align: center;
   color: #1C3873;
+}
+
+@media screen and (max-width: 1399.98px) {
+  .questions__headers {
+    padding-left: 0;
+  }
 }
 
 @media screen and (max-width: 1199.98px) {
@@ -840,6 +847,33 @@ h6 {
     height: 47px;
     font-size: 14px;
   }
+
+  .questions {
+    height: 544px;
+    margin-top: -108px;
+    background: url("../images/questions/bg-tablet.png") top center;
+    background-size: auto 100%;
+  }
+
+  .questions__headers {
+    margin-top: 135px;
+  }
+
+  .questions__subtitle {
+    font-size: 14px;
+    line-height: 14px;
+  }
+
+  .questions__title {
+    margin-top: 28px;
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  .questions__form {
+    margin-top: 52px;
+    margin-right: unset;
+  }
 }
 
 @media screen and (max-width: 767.98px) {
@@ -991,6 +1025,44 @@ h6 {
   .logistics__equipment {
     width: calc(50% - 15px);
   }
+
+  .questions {
+    height: 450px;
+    margin-top: 0;
+    background-position: top left;
+  }
+
+  .questions__headers {
+    margin-top: 145px;
+    padding-left: 15px;
+  }
+
+  .questions__subtitle {
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  .questions__title {
+    margin-top: 20px;
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .questions__form {
+    margin-top: 70px;
+  }
+
+  .form {
+    padding: 25px 20px 30px;
+  }
+
+  .form__title {
+    font-size: 16px;
+  }
+
+  .form__fields {
+    margin-top: 25px;
+  }
 }
 
 @media screen and (max-width: 575.98px) {
@@ -1035,5 +1107,32 @@ h6 {
     width: 290px;
     height: 272px;
     margin-right: 15px;
+  }
+
+  .questions {
+    height: auto;
+    background: url("../images/questions/bg-mobile.png") top center;
+    background-size: cover;
+    padding-bottom: 36px;
+  }
+
+  .questions__headers {
+    margin-top: 52px;
+  }
+
+  .questions__subtitle {
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  .questions__title {
+    font-size: 24px;
+    line-height: 28px;
+  }
+
+  .questions__form {
+    margin-top: 30px;
+    max-width: 290px;
+    margin-right: auto;
   }
 }

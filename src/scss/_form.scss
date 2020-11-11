@@ -4,6 +4,10 @@
   border-radius: 10px;
   padding: 35px 40px 60px;
 
+  @include tablet {
+    padding: 25px 20px 30px;
+  }
+
   &_embed {
     background: transparent;
     padding: 0;
@@ -11,15 +15,27 @@
   }
 
   &__title {
+
     font-weight: 500;
     font-size: 18px;
     line-height: 22px;
     text-align: center;
     color: $blue;
+
+    @include tablet {
+      font-size: 16px;
+    }
+
   }
 
   &__fields {
+
     margin-top: 35px;
+
+    @include tablet {
+      margin-top: 25px;
+    }
+
   }
 
   &__field-wrapper {
