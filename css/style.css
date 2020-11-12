@@ -202,10 +202,46 @@ h6 {
   height: 916px;
   background: url("../images/hero/bg.png") bottom center no-repeat;
   background-size: auto 100%;
+  color: #FFFFFF;
 }
 
 .hero__header {
   margin-top: 37px;
+}
+
+.hero__title {
+  margin-top: 70px;
+  font-weight: bold;
+  font-size: 45px;
+  line-height: 53px;
+}
+
+.hero__benefits {
+  margin-top: 40px;
+  width: 400px;
+  max-width: 100%;
+}
+
+.hero__benefit {
+  position: relative;
+  font-size: 20px;
+  line-height: 23px;
+  padding-left: 60px;
+}
+
+.hero__benefit:not(:last-child) {
+  margin-bottom: 35px;
+}
+
+.hero__benefit::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 40px;
+  height: 29px;
+  background: url("../images/hero/benefit-icon.svg") left top no-repeat;
+  background-size: contain;
 }
 
 .small-header {

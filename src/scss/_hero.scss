@@ -3,6 +3,7 @@
   height: 916px;
   background: url("../images/hero/bg.png") bottom center no-repeat;
   background-size: auto 100%;
+  color: $white;
 
   &__header {
 
@@ -10,6 +11,43 @@
 
     @include tablet {
       margin-top: 0;
+    }
+
+  }
+
+  &__title {
+    margin-top: 70px;
+    font-weight: bold;
+    font-size: 45px;
+    line-height: 53px;
+  }
+
+  &__benefits {
+    margin-top: 40px;
+    width: 400px;
+    max-width: 100%;
+  }
+
+  &__benefit {
+
+    position: relative;
+    font-size: 20px;
+    line-height: 23px;
+    padding-left: 60px;
+
+    &:not(:last-child) {
+      margin-bottom: 35px;
+    }
+
+    &::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 40px;
+      height: 29px;
+      background: url("../images/hero/benefit-icon.svg") left top no-repeat;
+      background-size: contain;
     }
 
   }
