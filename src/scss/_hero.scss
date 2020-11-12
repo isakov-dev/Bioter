@@ -1,0 +1,17 @@
+.hero {
+
+  height: 916px;
+  background: url("../images/hero/bg.png") bottom center no-repeat;
+  background-size: auto 100%;
+
+  &__header {
+
+    margin-top: 37px;
+
+    @include tablet {
+      margin-top: 0;
+    }
+
+  }
+
+}

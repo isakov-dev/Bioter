@@ -1,0 +1,56 @@
+.header {
+
+  color: $white;
+
+  @include tablet {
+    background: $blue;
+    padding: 16px 0;
+  }
+
+  &__logo {
+
+    max-width: 100%;
+    height: auto;
+
+    @include laptop {
+      width: 150px;
+    }
+
+    @include tablet {
+      width: 120px;
+    }
+
+  }
+
+  &__phone {
+
+    display: flex;
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 29px;
+
+    @include laptop {
+      font-size: 22px;
+      line-height: 26px;
+    }
+
+  }
+
+  &__email {
+
+    display: flex;
+    width: max-content;
+    margin-left: auto;
+    margin-top: 5px;
+    font-size: 18px;
+    line-height: 21px;
+    text-decoration-line: underline;
+
+    @include laptop {
+      font-size: 16px;
+      line-height: 19px;
+    }
+
+  }
+
+}

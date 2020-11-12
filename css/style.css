@@ -172,6 +172,42 @@ h6 {
   width: 9px;
 }
 
+.header {
+  color: #FFFFFF;
+}
+
+.header__logo {
+  max-width: 100%;
+  height: auto;
+}
+
+.header__phone {
+  display: flex;
+  font-weight: bold;
+  font-size: 25px;
+  line-height: 29px;
+}
+
+.header__email {
+  display: flex;
+  width: max-content;
+  margin-left: auto;
+  margin-top: 5px;
+  font-size: 18px;
+  line-height: 21px;
+  text-decoration-line: underline;
+}
+
+.hero {
+  height: 916px;
+  background: url("../images/hero/bg.png") bottom center no-repeat;
+  background-size: auto 100%;
+}
+
+.hero__header {
+  margin-top: 37px;
+}
+
 .small-header {
   background: #1C3873;
 }
@@ -750,6 +786,20 @@ h6 {
     line-height: 23px;
   }
 
+  .header__logo {
+    width: 150px;
+  }
+
+  .header__phone {
+    font-size: 22px;
+    line-height: 26px;
+  }
+
+  .header__email {
+    font-size: 16px;
+    line-height: 19px;
+  }
+
   .small-header__row {
     justify-content: space-between;
   }
@@ -969,6 +1019,19 @@ h6 {
   .flickity-enabled .flickity-prev-next-button.next {
     left: unset;
     right: calc(50% - 50px);
+  }
+
+  .header {
+    background: #1C3873;
+    padding: 16px 0;
+  }
+
+  .header__logo {
+    width: 120px;
+  }
+
+  .hero__header {
+    margin-top: 0;
   }
 
   .small-header {
