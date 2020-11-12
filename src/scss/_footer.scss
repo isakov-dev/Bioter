@@ -1,0 +1,122 @@
+.footer {
+
+  background: $light-blue;
+  padding: 58px 0;
+  color: $blue;
+
+  @include desktop {
+    padding: 32px 0 37px;
+  }
+
+  &__logo {
+    max-width: 100%;
+    height: auto;
+
+    @include laptop {
+      width: 150px;
+    }
+
+    @include tablet {
+      width: 120px;
+      margin-left: auto;
+      margin-right: auto;
+      display: block;
+    }
+
+  }
+
+  &__slogan {
+
+    font-size: 13px;
+    line-height: 14px;
+    margin-top: 4px;
+
+    @include tablet {
+      margin-top: 10px;
+      text-align: center;
+    }
+
+  }
+
+  &__contact {
+
+    font-size: 15px;
+    line-height: 22px;
+
+    @include tablet {
+      text-align: center;
+    }
+
+    &:not(:last-child) {
+
+      margin-bottom: 15px;
+
+      @include desktop {
+        margin-bottom: 12px;
+      }
+
+    }
+
+    &:first-child {
+
+      @include tablet {
+        margin-top: 30px;
+      }
+
+    }
+
+  }
+
+  &__button {
+
+    @include tablet {
+      margin-top: 30px;
+    }
+
+  }
+
+  &__phone {
+
+    display: flex;
+    width: max-content;
+    margin-left: auto;
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 29px;
+
+    @include desktop {
+      margin-top: 15px;
+    }
+
+    @include laptop {
+      font-size: 22px;
+      line-height: 26px;
+    }
+
+    @include tablet {
+      margin-top: 30px;
+      font-size: 25px;
+      line-height: 29px;
+      margin-right: auto;
+    }
+
+  }
+
+  &__email {
+
+    display: flex;
+    width: max-content;
+    margin-left: auto;
+    margin-top: 5px;
+    text-decoration: underline;
+    font-size: 15px;
+    line-height: 18px;
+
+    @include tablet {
+      margin-top: 10px;
+      margin-right: auto;
+    }
+
+  }
+
+}

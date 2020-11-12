@@ -547,7 +547,7 @@ h6 {
 
 .form_embed {
   background: transparent;
-  padding: 0;
+  padding: 0 !important;
   border-radius: 0;
 }
 
@@ -654,6 +654,51 @@ h6 {
   color: #1C3873;
 }
 
+.footer {
+  background: #bcd7ff;
+  padding: 58px 0;
+  color: #1C3873;
+}
+
+.footer__logo {
+  max-width: 100%;
+  height: auto;
+}
+
+.footer__slogan {
+  font-size: 13px;
+  line-height: 14px;
+  margin-top: 4px;
+}
+
+.footer__contact {
+  font-size: 15px;
+  line-height: 22px;
+}
+
+.footer__contact:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+.footer__phone {
+  display: flex;
+  width: max-content;
+  margin-left: auto;
+  font-weight: bold;
+  font-size: 25px;
+  line-height: 29px;
+}
+
+.footer__email {
+  display: flex;
+  width: max-content;
+  margin-left: auto;
+  margin-top: 5px;
+  text-decoration: underline;
+  font-size: 15px;
+  line-height: 18px;
+}
+
 @media screen and (max-width: 1399.98px) {
   .questions__headers {
     padding-left: 0;
@@ -672,6 +717,18 @@ h6 {
   .about__description {
     margin-top: 35px;
     font-size: 18px;
+  }
+
+  .footer {
+    padding: 32px 0 37px;
+  }
+
+  .footer__contact:not(:last-child) {
+    margin-bottom: 12px;
+  }
+
+  .footer__phone {
+    margin-top: 15px;
   }
 }
 
@@ -874,6 +931,15 @@ h6 {
     margin-top: 52px;
     margin-right: unset;
   }
+
+  .footer__logo {
+    width: 150px;
+  }
+
+  .footer__phone {
+    font-size: 22px;
+    line-height: 26px;
+  }
 }
 
 @media screen and (max-width: 767.98px) {
@@ -1062,6 +1128,42 @@ h6 {
 
   .form__fields {
     margin-top: 25px;
+  }
+
+  .footer__logo {
+    width: 120px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+
+  .footer__slogan {
+    margin-top: 10px;
+    text-align: center;
+  }
+
+  .footer__contact {
+    text-align: center;
+  }
+
+  .footer__contact:first-child {
+    margin-top: 30px;
+  }
+
+  .footer__button {
+    margin-top: 30px;
+  }
+
+  .footer__phone {
+    margin-top: 30px;
+    font-size: 25px;
+    line-height: 29px;
+    margin-right: auto;
+  }
+
+  .footer__email {
+    margin-top: 10px;
+    margin-right: auto;
   }
 }
 
