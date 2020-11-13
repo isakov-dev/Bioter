@@ -203,6 +203,7 @@ h6 {
   background: url("../images/hero/bg.png") bottom center no-repeat;
   background-size: auto 100%;
   color: #FFFFFF;
+  margin-bottom: -35px;
 }
 
 .hero__header {
@@ -242,6 +243,69 @@ h6 {
   height: 29px;
   background: url("../images/hero/benefit-icon.svg") left top no-repeat;
   background-size: contain;
+}
+
+.hero-categories {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.hero-category {
+  position: absolute;
+}
+
+.hero-category_first {
+  top: 66px;
+  right: -50px;
+}
+
+.hero-category_second {
+  right: 200px;
+  top: 320px;
+}
+
+.hero-category__card {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(-50%, -100%);
+  background: #1C3873;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.45);
+  border-radius: 60px 0 60px 60px;
+  width: 264px;
+  padding: 18px 22px 14px 46px;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 18px;
+  color: #FFFFFF;
+}
+
+.hero-category__card_centered {
+  transform: translate(-50%, -50%);
+}
+
+.hero-category__card::before {
+  content: "";
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #FFFFFF;
+  opacity: .2;
+}
+
+.hero-category__anchor {
+  margin-top: 12px;
+  display: flex;
+  width: max-content;
+  font-weight: normal;
+  text-decoration-line: underline;
+  color: #FFFFFF;
+  opacity: 0.5;
 }
 
 .small-header {
@@ -778,6 +842,45 @@ h6 {
 }
 
 @media screen and (max-width: 1199.98px) {
+  .header__logo {
+    width: 150px;
+  }
+
+  .header__phone {
+    font-size: 22px;
+    line-height: 26px;
+  }
+
+  .hero {
+    height: 598px;
+  }
+
+  .hero__title {
+    margin-top: 39px;
+    font-size: 28px;
+    line-height: 33px;
+  }
+
+  .hero__benefits {
+    margin-top: 24px;
+    width: 390px;
+  }
+
+  .hero__benefit {
+    font-size: 16px;
+    line-height: 19px;
+    padding-left: 45px;
+  }
+
+  .hero__benefit:not(:last-child) {
+    margin-bottom: 20px;
+  }
+
+  .hero__benefit::before {
+    width: 30px;
+    height: 22px;
+  }
+
   .about::before {
     height: 110px;
   }
@@ -820,15 +923,6 @@ h6 {
   .subtitle {
     font-size: 20px;
     line-height: 23px;
-  }
-
-  .header__logo {
-    width: 150px;
-  }
-
-  .header__phone {
-    font-size: 22px;
-    line-height: 26px;
   }
 
   .header__email {
@@ -1068,6 +1162,12 @@ h6 {
 
   .hero__header {
     margin-top: 0;
+  }
+
+  .hero__title {
+    margin-top: 25px;
+    font-size: 26px;
+    line-height: 30px;
   }
 
   .small-header {

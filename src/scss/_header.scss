@@ -12,7 +12,7 @@
     max-width: 100%;
     height: auto;
 
-    @include laptop {
+    @include desktop {
       width: 150px;
     }
 
@@ -29,7 +29,7 @@
     font-size: 25px;
     line-height: 29px;
 
-    @include laptop {
+    @include desktop {
       font-size: 22px;
       line-height: 26px;
     }
