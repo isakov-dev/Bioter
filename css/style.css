@@ -9,6 +9,7 @@ html {
   line-height: 1.15;
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  scroll-behavior: smooth;
 }
 
 body {
@@ -881,6 +882,30 @@ h6 {
     height: 22px;
   }
 
+  .hero-categories {
+    margin-top: 35px;
+  }
+
+  .hero-category {
+    position: static;
+  }
+
+  .hero-category_first {
+    margin-bottom: 15px;
+  }
+
+  .hero-category__image {
+    display: none;
+  }
+
+  .hero-category__card {
+    position: relative;
+    top: unset;
+    left: unset;
+    transform: none;
+    margin-left: auto;
+  }
+
   .about::before {
     height: 110px;
   }
@@ -928,6 +953,18 @@ h6 {
   .header__email {
     font-size: 16px;
     line-height: 19px;
+  }
+
+  .hero-category__card {
+    width: 217px;
+    padding: 14px 18px 12px 38px;
+    border-radius: 48px 0 48px 48px;
+    font-size: 12px;
+    line-height: 14px;
+  }
+
+  .hero-category__anchor {
+    margin-top: 9px;
   }
 
   .small-header__row {
@@ -1160,6 +1197,10 @@ h6 {
     width: 120px;
   }
 
+  .hero {
+    height: 500px;
+  }
+
   .hero__header {
     margin-top: 0;
   }
@@ -1168,6 +1209,10 @@ h6 {
     margin-top: 25px;
     font-size: 26px;
     line-height: 30px;
+  }
+
+  .hero-category__card {
+    margin-left: unset;
   }
 
   .small-header {
@@ -1367,6 +1412,22 @@ h6 {
 }
 
 @media screen and (max-width: 575.98px) {
+  .hero {
+    background: url("../images/hero/bg-phone.png") bottom center no-repeat;
+    background-size: 100% auto;
+    height: auto;
+    padding-bottom: 100px;
+    margin-bottom: 0;
+  }
+
+  .hero-category__card {
+    width: 289px;
+    max-width: 100%;
+    padding: 18px 46px;
+    font-size: 14px;
+    line-height: 16px;
+  }
+
   .use__item {
     flex-direction: column;
   }

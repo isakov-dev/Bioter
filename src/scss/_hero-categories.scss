@@ -5,20 +5,42 @@
   flex-direction: column;
   justify-content: flex-end;
 
+  @include desktop {
+    margin-top: 35px;
+  }
+
 }
 
 .hero-category {
 
   position: absolute;
 
+  @include desktop {
+    position: static;
+  }
+
   &_first {
+
     top: 66px;
     right: -50px;
+
+    @include desktop {
+      margin-bottom: 15px;
+    }
+
   }
 
   &_second {
     right: 200px;
     top: 320px;
+  }
+
+  &__image {
+
+    @include desktop {
+      display: none;
+    }
+
   }
 
   &__card {
@@ -36,6 +58,34 @@
     font-size: 15px;
     line-height: 18px;
     color: $white;
+
+    @include desktop {
+      position: relative;
+      top: unset;
+      left: unset;
+      transform: none;
+      margin-left: auto;
+    }
+
+    @include laptop {
+      width: 217px;
+      padding: 14px 18px 12px 38px;
+      border-radius: 48px 0 48px 48px;
+      font-size: 12px;
+      line-height: 14px;
+    }
+
+    @include tablet {
+      margin-left: unset;
+    }
+
+    @include phone {
+      width: 289px;
+      max-width: 100%;
+      padding: 18px 46px;
+      font-size: 14px;
+      line-height: 16px;
+    }
 
     &_centered {
       transform: translate(-50%, -50%);
@@ -56,6 +106,7 @@
   }
 
   &__anchor {
+
     margin-top: 12px;
     display: flex;
     width: max-content;
@@ -63,6 +114,11 @@
     text-decoration-line: underline;
     color: #FFFFFF;
     opacity: 0.5;
+
+    @include laptop {
+      margin-top: 9px;
+    }
+
   }
 
 }
