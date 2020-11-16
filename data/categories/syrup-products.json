@@ -1,0 +1,50 @@
+[
+  {
+    "image": "images/categories/prevents-drying.jpg",
+    "caption": "Препятствует быстрому высыханию для продуктов с малым содержанием жира"
+  },
+  {
+    "image": "images/categories/shelf-life.jpg",
+    "caption": "Увеличение сроков хранения"
+  },
+  {
+    "image": "images/categories/porous-structure.jpg",
+    "caption": "Пористая структура, рассыпчатость, хрустящий вкус (хлебобулочных изделий)"
+  },
+  {
+    "image": "images/categories/no-sediment.jpg",
+    "caption": "Отсутствие осадка (в напитках)"
+  },
+  {
+    "image": "images/categories/marshmallow.jpg",
+    "caption": "Придает воздушную консистенцию при изготовлении зефира и патоки"
+  },
+  {
+    "image": "images/categories/taste.jpg",
+    "caption": "Усиление вкуса и аромата"
+  },
+  {
+    "image": "images/categories/stability.jpg",
+    "caption": "Стабильность при хранении и в готовых изделиях"
+  },
+  {
+    "image": "images/categories/caramel.jpg",
+    "caption": "Гибкость при варке карамели"
+  },
+  {
+    "image": "images/categories/golden-crust.jpg",
+    "caption": "Придание продукту золотистой корочки"
+  },
+  {
+    "image": "images/categories/glossing.jpg",
+    "caption": "Глянцевание, блеск, глазировка"
+  },
+  {
+    "image": "images/categories/softness.jpg",
+    "caption": "Мягкость и пластичность (для конфетных начинок)"
+  },
+  {
+    "image": "images/categories/prevents-drying-2.jpg",
+    "caption": "Препятствует засыханию в процессе хранения"
+  }
+]

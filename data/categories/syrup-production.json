@@ -1,0 +1,18 @@
+[
+  {
+    "image": "images/categories/manufacturability.jpg",
+    "caption": "Удобство использования, технологичность (сироп уже готов к использованию на производстве)"
+  },
+  {
+    "image": "images/categories/purity.jpg",
+    "caption": "Исключительная чистота сиропа"
+  },
+  {
+    "image": "images/categories/humidity-control.jpg",
+    "caption": "Гидратация/контроль влажности (удерживает влагу и предотвращает кристализацию сахаров в готовом продукте)"
+  },
+  {
+    "image": "images/categories/fermentation.jpg",
+    "caption": "Легкая ферментация"
+  }
+]

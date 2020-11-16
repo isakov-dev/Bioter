@@ -29,7 +29,7 @@
             </a>
             <a class="category__tab" data-toggle="list" href="#syrup-products" role="tab"
                aria-controls="syrup-products">
-                Для производства
+                Для продукции
             </a>
         </div>
         <div class="category__tabs-content tab-content">
@@ -38,8 +38,16 @@
                     @@loop("category-advantage-item.html", "../../data/categories/syrup-cost-price.json")
                 </div>
             </div>
-            <div class="tab-pane fade" id="syrup-production" role="tabpanel">...</div>
-            <div class="tab-pane fade" id="syrup-products" role="tabpanel">...</div>
+            <div class="tab-pane fade" id="syrup-production" role="tabpanel">
+                <div class="row">
+                    @@loop("category-advantage-item.html", "../../data/categories/syrup-production.json")
+                </div>
+            </div>
+            <div class="tab-pane fade" id="syrup-products" role="tabpanel">
+                <div class="row">
+                    @@loop("category-advantage-item.html", "../../data/categories/syrup-products.json")
+                </div>
+            </div>
         </div>
     </div>
 </div>
