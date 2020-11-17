@@ -29,6 +29,7 @@ class Logic {
                 $mail->CharSet = "utf-8";
                 $mail->setFrom('mail@bioter.tmweb.ru', 'Bioter');
                 $mail->addAddress('isakov.n@digitalaround.ru');
+                $mail->addAddress('office@biotr.ru');
                 $mail->isHTML(true);
                 $mail->Subject = 'Заявка с Биотэр';
 
