@@ -10,6 +10,12 @@
     <div class="modal__subtitle">Форма не отправлена из-за ошибки на сервере. Повторите попытку позже.</div>
 </div>
 
+<div class="modal" id="modal-captcha-error">
+    <img src="images/modal/icon-error.svg" class="modal__icon" alt="">
+    <div class="modal__title">Ошибка</div>
+    <div class="modal__subtitle">Вы не прошли проверку reCaptcha. Повторите попытку позже.</div>
+</div>
+
 <div class="modal" id="modal-form">
     <div class="form form_embed">
         <div class="form__title">
@@ -20,10 +26,12 @@
                 <input type="text" class="form__field" placeholder="Имя" v-model="name">
             </div>
             <div class="form__field-wrapper form__field-wrapper_phone">
-                <input class="form__field" placeholder="Телефон">
+                <the-mask v-model="phone" mask="+7 (###) ###-##-##" :masked="true" class="form__field"
+                          placeholder="Телефон"></the-mask>
             </div>
         </div>
-        <button class="button form__submit">
+        <button class="button form__submit" :class="{ 'button_disabled' : !formIsValid }"
+                v-on:click="submitForm()">
             Отправить заявку
         </button>
     </div>

@@ -7,6 +7,8 @@
 
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 
+    <script src="https://www.google.com/recaptcha/api.js?render=6LcV2OMZAAAAADkO9uYTHQhJ4CjWd4QFPQJExfqA"></script>
+
     <link rel="stylesheet" href="css/bootstrap-grid.min.css">
     <link rel="stylesheet" href="css/flickity.css">
     <link rel="stylesheet" href="css/jquery.fancybox.min.css">
@@ -393,25 +395,19 @@
                                     <div class="col-lg-6">
                                         <div class="advantage">
                                             <img src="images/categories/protein-removal.jpg" class="advantage__image" alt="">
-                                            <div class="advantage__caption">Для одновременного удаления белков и полифенолов из пива</div>
+                                            <div class="advantage__caption">Высокая степень адсорбции вызывающих помутнение пива веществ</div>
                                         </div>
                                     </div>
                                     <div class="col-lg-6">
                                         <div class="advantage">
                                             <img src="images/categories/kieselguhr-consumption.jpg" class="advantage__image" alt="">
-                                            <div class="advantage__caption">Расход кизельгура снижается, при получении лучших результатов поколлоидной стабильности</div>
+                                            <div class="advantage__caption">Инертны по отношению к пиву, не изменяют вкуса, запаха, цвета, пеностойкости</div>
                                         </div>
                                     </div>
                                     <div class="col-lg-6">
                                         <div class="advantage">
                                             <img src="images/categories/dosage-methods.jpg" class="advantage__image" alt="">
-                                            <div class="advantage__caption">Силикагель может дозироваться как через дозатор кизельгура, так и через отдельный дозатор для увеличения времени контакта в буферной ёмкости и получения более эффективного результата</div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-6">
-                                        <div class="advantage">
-                                            <img src="images/categories/physicochemical-parameters.jpg" class="advantage__image" alt="">
-                                            <div class="advantage__caption">Физико-химические параметры обеспечивают максимальную эффективность при стабилизации и избирательной адсорбации</div>
+                                            <div class="advantage__caption">Позволяют увеличить срок хранения от 6 месяцев и выше</div>
                                         </div>
                                     </div>
                                 </div>
@@ -575,6 +571,12 @@
             <div class="modal__subtitle">Форма не отправлена из-за ошибки на сервере. Повторите попытку позже.</div>
         </div>
 
+        <div class="modal" id="modal-captcha-error">
+            <img src="images/modal/icon-error.svg" class="modal__icon" alt="">
+            <div class="modal__title">Ошибка</div>
+            <div class="modal__subtitle">Вы не прошли проверку reCaptcha. Повторите попытку позже.</div>
+        </div>
+
         <div class="modal" id="modal-form">
             <div class="form form_embed">
                 <div class="form__title">
@@ -585,10 +587,10 @@
                         <input type="text" class="form__field" placeholder="Имя" v-model="name">
                     </div>
                     <div class="form__field-wrapper form__field-wrapper_phone">
-                        <input class="form__field" placeholder="Телефон">
+                        <the-mask v-model="phone" mask="+7 (###) ###-##-##" :masked="true" class="form__field" placeholder="Телефон"></the-mask>
                     </div>
                 </div>
-                <button class="button form__submit">
+                <button class="button form__submit" :class="{ 'button_disabled' : !formIsValid }" v-on:click="submitForm()">
                     Отправить заявку
                 </button>
             </div>
