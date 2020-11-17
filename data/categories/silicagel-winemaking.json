@@ -1,22 +1,22 @@
 [
   {
-    "image": "images/categories/protein-removal.jpg",
+    "image": "images/categories/chemically-inert.jpg",
     "caption": "Химически инертен, не влияет на качество и вкус вина"
   },
   {
-    "image": "images/categories/kieselguhr-consumption.jpg",
-    "caption": "Обеспечивает снижение дозировки бентонита"
-  },
-  {
-    "image": "images/categories/dosage-methods.jpg",
+    "image": "images/categories/filter-press-cake.jpg",
     "caption": "Уменьшение фильтр-прессной лепешки"
   },
   {
-    "image": "images/categories/physicochemical-parameters.jpg",
-    "caption": "Увеличение продолжительности цикла фильтра"
+    "image": "images/categories/bentonite-dosage.jpg",
+    "caption": "Обеспечивает снижение дозировки бентонита"
   },
   {
-    "image": "images/categories/physicochemical-parameters.jpg",
+    "image": "images/categories/filtration-loss.jpg",
     "caption": "Сокращение потерь вина при фильтрации"
+  },
+  {
+    "image": "images/categories/filter-duration.jpg",
+    "caption": "Увеличение продолжительности цикла фильтра"
   }
 ]
