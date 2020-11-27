@@ -7,7 +7,7 @@ $(document).ready(function () {
             async send(formData) {
                 return new Promise((resolve, reject) => {
                     grecaptcha
-                        .execute('6LcV2OMZAAAAADkO9uYTHQhJ4CjWd4QFPQJExfqA', {action: 'form_send'})
+                        .execute('6Lf2m-kZAAAAAMM7Zr9v95WegYnOH-x2gSIqIl-J', {action: 'form_send'})
                         .then(function(token) {
                             formData.reCaptchaToken = token;
                             axios
