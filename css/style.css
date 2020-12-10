@@ -460,6 +460,7 @@ h6 {
 
 .category__tabs {
   margin-top: 30px;
+  padding-bottom: 10px;
   display: flex;
   align-items: center;
 }
@@ -485,7 +486,7 @@ h6 {
 }
 
 .category__tabs-content {
-  margin-top: 66px;
+  margin-top: 56px;
 }
 
 .advantage {
@@ -1053,7 +1054,7 @@ h6 {
   }
 
   .category__tabs-content {
-    margin-top: 36px;
+    margin-top: 26px;
   }
 
   .advantage {
@@ -1278,12 +1279,12 @@ h6 {
   }
 
   .category__tabs-content {
-    margin-top: 30px;
+    margin-top: 20px;
   }
 
   .advantage__image {
     width: 105px;
-    border-radius: 17px;
+    border-radius: 22px;
     margin-right: 20px;
   }
 

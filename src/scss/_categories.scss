@@ -163,6 +163,7 @@
   &__tabs {
 
     margin-top: 30px;
+    padding-bottom: 10px;
     display: flex;
     align-items: center;
 
@@ -205,14 +206,14 @@
 
   &__tabs-content {
 
-    margin-top: 66px;
+    margin-top: 56px;
 
     @include laptop {
-      margin-top: 36px;
+      margin-top: 26px;
     }
 
     @include tablet {
-      margin-top: 30px;
+      margin-top: 20px;
     }
 
   }
@@ -248,7 +249,7 @@
 
     @include tablet {
       width: 105px;
-      border-radius: 17px;
+      border-radius: 22px;
       margin-right: 20px;
     }
 
