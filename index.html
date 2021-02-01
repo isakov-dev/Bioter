@@ -14,6 +14,29 @@
     <link rel="stylesheet" href="css/jquery.fancybox.min.css">
     <link rel="stylesheet" href="css/style.css?v=1.0.1">
 
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript">
+        (function(m, e, t, r, i, k, a) {
+            m[i] = m[i] || function() {
+                (m[i].a = m[i].a || []).push(arguments)
+            };
+            m[i].l = 1 * new Date();
+            k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a)
+        })
+        (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+        ym(71579686, "init", {
+            clickmap: true,
+            trackLinks: true,
+            accurateTrackBounce: true,
+            webvisor: true
+        });
+    </script>
+    <noscript>
+        <div><img src="https://mc.yandex.ru/watch/71579686" style="position:absolute; left:-9999px;" alt="" /></div>
+    </noscript>
+    <!-- /Yandex.Metrika counter -->
+
     <title>Биотэр</title>
 </head>
 
@@ -84,14 +107,18 @@
                                 <img src="images/hero-category/syrup.png" class="hero-category__image" alt="">
                                 <div class="hero-category__card">
                                     Глюкозно-фруктозные сиропы (ГФС-42, ГФС-55)
-                                    <a href="#syrup-category" class="hero-category__anchor">Подробнее</a>
+                                    <a href="#syrup-category" class="hero-category__anchor" onclick="ym(71579686,'reachGoal','interes_gfs')">
+                                        Подробнее
+                                    </a>
                                 </div>
                             </div>
                             <div class="hero-category hero-category_second">
                                 <img src="images/hero-category/silicagel.png" class="hero-category__image" alt="">
                                 <div class="hero-category__card hero-category__card_centered">
                                     Стабилизаторы для пивоварения и виноделия (силикагелевые)
-                                    <a href="#silicagel-category" class="hero-category__anchor">Подробнее</a>
+                                    <a href="#silicagel-category" class="hero-category__anchor" onclick="ym(71579686,'reachGoal','interes_silik')">
+                                        Подробнее
+                                    </a>
                                 </div>
                             </div>
                         </div>
@@ -190,10 +217,10 @@
                                 нейтральны в аромате с интенсивно сладким вкусом без посторонних примесей.
                             </div>
                             <div class="category__links">
-                                <a href="downloads/gfs-presentation.pdf" class="category__link" target="_blank">
+                                <a href="downloads/gfs-presentation.pdf" class="category__link" target="_blank" onclick="ym(71579686,'reachGoal','down_gfs')">
                                     Презентация глюкозно-фруктозных сиропов
                                 </a>
-                                <a href="downloads/gfs-certificate.pdf" class="category__link" target="_blank">
+                                <a href="downloads/gfs-certificate.pdf" class="category__link" target="_blank" onclick="ym(71579686,'reachGoal','down_gfs')">
                                     Сертификация ГФС-42, ГФС-55, КФП (ГФС-70)
                                 </a>
                             </div>
@@ -205,13 +232,13 @@
                     <div class="category__advantages">
                         <div class="subtitle">Преимущества использования ГФС-42, ГФС-55, КФП (ГФС-70)</div>
                         <div class="category__tabs list-group" role="tablist">
-                            <a class="category__tab active" data-toggle="list" href="#syrup-cost-price" role="tab" aria-controls="syrup-cost-price">
+                            <a class="category__tab active" data-toggle="list" href="#syrup-cost-price" role="tab" aria-controls="syrup-cost-price" onclick="ym(71579686,'reachGoal','interes_gfs')">
                                 Для снижения себестоимости
                             </a>
-                            <a class="category__tab" data-toggle="list" href="#syrup-production" role="tab" aria-controls="syrup-production">
+                            <a class="category__tab" data-toggle="list" href="#syrup-production" role="tab" aria-controls="syrup-production" onclick="ym(71579686,'reachGoal','interes_gfs')">
                                 Для производства
                             </a>
-                            <a class="category__tab" data-toggle="list" href="#syrup-products" role="tab" aria-controls="syrup-products">
+                            <a class="category__tab" data-toggle="list" href="#syrup-products" role="tab" aria-controls="syrup-products" onclick="ym(71579686,'reachGoal','interes_gfs')">
                                 Для продукции
                             </a>
                         </div>
@@ -371,13 +398,13 @@
                                 необходимое пенообразование.
                             </div>
                             <div class="category__links">
-                                <a href="downloads/bris-presentation.pdf" target="_blank" class="category__link">
+                                <a href="downloads/bris-presentation.pdf" target="_blank" class="category__link" onclick="ym(71579686,'reachGoal','down_silik')">
                                     Презентация силикагелевых стабилизаторов для сельского хозяйства
                                 </a>
-                                <a href="downloads/bris-presentation-vine-and-beer.pdf" target="_blank" class="category__link">
+                                <a href="downloads/bris-presentation-vine-and-beer.pdf" target="_blank" class="category__link" onclick="ym(71579686,'reachGoal','down_silik')">
                                     Презентация силикагелевых стабилизаторов для вина и пива
                                 </a>
-                                <a href="downloads/silicagel-certificate.pdf" target="_blank" class="category__link">
+                                <a href="downloads/silicagel-certificate.pdf" target="_blank" class="category__link" onclick="ym(71579686,'reachGoal','down_silik')">
                                     Сертификат безопасности
                                 </a>
                             </div>
@@ -389,10 +416,10 @@
                     <div class="category__advantages">
                         <div class="subtitle">Применение силикагелевых стабилизаторов</div>
                         <div class="category__tabs list-group" role="tablist">
-                            <a class="category__tab active" data-toggle="list" href="#silicagel-brewing" role="tab" aria-controls="silicagel-brewing">
+                            <a class="category__tab active" data-toggle="list" href="#silicagel-brewing" role="tab" aria-controls="silicagel-brewing" onclick="ym(71579686,'reachGoal','interes_silik')">
                                 Для пивоварения
                             </a>
-                            <a class="category__tab" data-toggle="list" href="#silicagel-winemaking" role="tab" aria-controls="silicagel-winemaking">
+                            <a class="category__tab" data-toggle="list" href="#silicagel-winemaking" role="tab" aria-controls="silicagel-winemaking" onclick="ym(71579686,'reachGoal','interes_silik')">
                                 Для виноделия
                             </a>
                         </div>

@@ -13,6 +13,9 @@ $(document).ready(function () {
                             axios
                                 .post('/backend/rest/?action=send_form', JSON.stringify(formData))
                                 .then(function (response) {
+
+                                    ym(71579686,'reachGoal','vse_formy');
+
                                     $.fancybox.open({
                                         src: '#modal-success',
                                         opts: {
